@@ -8,7 +8,6 @@
 
 using namespace std;
 /*
-    bool readCharacter(string);
     void printCharaterList();
     void printPlayer(int);
     void removeCharater(string);
@@ -39,7 +38,19 @@ while(getline(file, line)){
     character.wisdom = stoi(hold);
     getline(ss, hold, '|');
     character.pridePoints = stoi(hold);
-    characterList.push_back(character);
+    characterList.pushback(character);
+    return true;
 }
+}
+void Game::printCharaterList(){
+    for(int i = 0; i < characterList.size(); i++){
+        cout << "Name: " << characterList.at(i).name << endl;
+        cout << "Age: " << characterList.at(i).age << endl;
+        cout << "Strength: "  << characterList.at(i).strength << endl;
+        cout << "Stamina: "  << characterList.at(i).stamina << endl;
+        cout << "Wisdom: " << characterList.at(i).wisdom << endl;
+        cout << "Pride Points: " << characterList.at(i).pridePoints << endl;
+         cout << "----------------------------------" << endl; 
+    }
 }
 
