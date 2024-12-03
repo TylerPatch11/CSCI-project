@@ -39,6 +39,7 @@ while(getline(file, line)){
     character.wisdom = stoi(hold);
     getline(ss, hold, '|');
     character.pridePoints = stoi(hold);
+    characterList.push_back(character);
 }
 }
 
