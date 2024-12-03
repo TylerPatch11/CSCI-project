@@ -50,7 +50,15 @@ void Game::printCharaterList(){
         cout << "Stamina: "  << characterList.at(i).stamina << endl;
         cout << "Wisdom: " << characterList.at(i).wisdom << endl;
         cout << "Pride Points: " << characterList.at(i).pridePoints << endl;
-         cout << "----------------------------------" << endl; 
+        cout << "----------------------------------" << endl; 
     }
+}
+bool Game::findCharacter(string player){
+    for (int i = 0; i < characterList.size(); i++) {
+    if (characterList.at(i).name == player) {
+      return true;
+    }
+  }
+  return false;
 }
 

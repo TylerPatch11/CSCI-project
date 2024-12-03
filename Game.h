@@ -24,5 +24,6 @@ class Game{
     void removeCharater(string);
     //bool checkSameTile(); dont know if needed
     Character selectCharacter(string);
+    bool findCharacter(string);
 };
 #endif
